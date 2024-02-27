@@ -1,44 +1,52 @@
-Objects:- 
+In JavaScript, we have some built-in data structures like arrays, objects, maps, and sets.
 
-In javaScript we have some built-in data structures as arrays,objects,maps and sets.
+Using objects, we can store properties. Within properties, we have key:value pairs. A key is also known as an "identifier".
+Firstly, the basic syntax for creating an object:
 
-By using objects we can store the propeerties . With in properties we have key:value pairs.And key is also known as "Identifiers".
-Firstly basic syntax for creation of an object:-
-                let (objectName)person = {
-                     properties;---------->key:value pairs
-                     ex:- name:"Balu",
-                          age:18,
-                          city:"kklr"
-                     ...
-                };
-In above example key->name,value->Balu.
+let objectName->person = {
+    // properties:- key:value pairs
+    // e.g., 
+    name: "Balu",
+    age: 18,
+    city: "kklr"
+    // ...
+};
+In the above example, key -> name, value -> Balu.
 
-After creation we need to access the propereties of a object so we need to use "Dot notation" and "Bracket notation".
-so from above example we see how to access properties.
-          Dot notation:-    
-                ex:-
-                     console.log(person.name);
-                o/p:- Balu
-            
-          Bracket notation:-
-                 ex:-
-                     console.log(person['name');
-                o/p:- Balu
-so these are the ways to access the properties from an object.
-And we have some rules to name the key they are:-
-              1)Only alphanumeric ,_,and $.
-              2)And not start with numbers.
-   Do's:-
-        name
-        _name
-        name$
-        name12
-   Dont's:-
-        12name 
-        my name
-And we can make the non identifiers as also identifiers by using "".
-   ex:-
-       "1":"value" 
-       "my name":  "Ramu"  
-Up to now we store value as either number or string there is no restriction as we need to store only those types.We can able to store the array,function,and objcet as well.
-ex:-
+And there are some rules to name the keys:
+
+Only alphanumeric characters, _, and $ are allowed.
+Keys cannot start with numbers.
+Do's:
+
+name
+_name
+name$
+name12
+
+Don'ts:
+
+12name
+my name
+
+After creation, to access the properties of an object, we can use "Dot notation" and "Bracket notation".
+So, from the above example, we see how to access properties.
+
+Dot notation:
+
+console.log(person.name);
+// Output: Balu
+
+Bracket notation:
+
+console.log(person['name']);
+// Output: Balu
+These are the ways to access properties from an object.
+
+Non-identifiers can be made into identifiers by using "".
+For example:
+
+"1": "value"
+"my name": "Ramu"
+Up to now, we've stored values as either numbers or strings, but there's no restriction; we can also store arrays, functions, and objects as values.
+
