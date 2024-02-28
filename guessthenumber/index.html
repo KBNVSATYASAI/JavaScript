@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container-fluid bg-container">
+      <div class="row bg-white">
+        <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+           
+          <h1 class="text-center game-description">
+            Find out the right number between 1 to 100
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 guess-bg-container text-center">
+          <h1 class="guess-heading">
+            Guess The Number
+            <img
+              class="guess-number-image"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png"
+            />
+          </h1>
+          <input type="text" class="user-input" id="userInput" />
+          
+          <div>
+            <br>
+            <button class="btn btn-info check-guess" onclick="checkGuess()">
+              Check
+            </button>
+          </div>
+          <br>
+          <p class="game-result" id="gameResult"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adding an external script file -->
+    <script src="numberguess.js"></script>
+  </body>
+</html>
