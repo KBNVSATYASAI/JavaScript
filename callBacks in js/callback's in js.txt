@@ -1,0 +1,53 @@
+Basically callback in javaScript is "A function is passing as an argument to another function" is known as callback. We can acheive it by several ways these these are the some ways 
+------------->
+
+
+
+(1)
+function dispalybalu(displaykavya) {
+    console.log("Hii");
+    displaykavya();
+    console.log("NAMASTE");
+}
+
+dispalybalu(function() {
+    console.log("RAMU");
+})
+
+
+
+
+
+
+(2)
+function dispalybalu(displaykavya) {
+    console.log("Hii");
+    displaykavya();
+    console.log("NAMASTE");
+}
+function displayramu() {
+    console.log("RAMU");
+}
+dispalybalu(displayramu)
+
+
+
+
+(3)
+function dispalybalu(displaykavya) {
+    console.log("Hii");
+    displaykavya();
+    console.log("NAMASTE");
+}
+let lakshmi = function displayramu() {
+    console.log("RAMU");
+}
+dispalybalu(lakshmi);
+
+
+
+
+
+
+
+
