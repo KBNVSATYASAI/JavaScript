@@ -1,3 +1,16 @@
+-> Here we use "fetch api" to make http requests to the website.
+Web site:-  https://gorest.co.in/my-account/access-tokens
+-> Here mainly we need to know that there is a parameters to the fetch method there is a two parameters "fetch(url,options)" . There are "url" and "options". 
+-> There url means -> the web site we need to play with the fetch method.
+-> And options means it's a kind of object that have some properties like the follows :-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+                                                 options object:-
+
+                                   method : "(ex:-get,post,delete etc...)"
+            headers :"Here headers is also an object that contains "content-type" , Accept,Authorization etc...
+                      body : In this we need to manipulate the data by using some jsom methods.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+-> Here's the basic program for the above explanation :-
 /*let data = {
     name : "Balu",
     gender : "Male",
